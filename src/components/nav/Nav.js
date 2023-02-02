@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './nav.css';
+
 const Nav = () => {
   return (
-    <div>
-      <h1>Client details ...</h1>
+    <div className='nav-cnt'>
+      <h1 className='nav-heading'>Client details </h1>
     </div>
   );
 };
