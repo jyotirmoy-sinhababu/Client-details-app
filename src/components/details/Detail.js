@@ -36,7 +36,32 @@ const Detail = ({ data }) => {
       </div>
       {viewDetails ? (
         <div>
-          <p>hi</p>
+          <div>
+            <div>
+              <h4>Contact person</h4>
+              <p>{data.name}</p>
+            </div>
+            <div>
+              <h4>Emails</h4>
+              <p>{data.email}</p>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>{data.phone}</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>Address</h4>
+              <p>
+                {data.address.street}, {data.address.suite}
+              </p>
+            </div>
+            <div>
+              <h4>City</h4>
+              <p>{data.address.city}</p>
+            </div>
+          </div>
         </div>
       ) : null}
     </>
