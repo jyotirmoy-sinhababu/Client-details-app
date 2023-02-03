@@ -39,22 +39,31 @@ const Home = () => {
   return (
     <>
       <Nav />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '21px',
+        }}
+      >
+        {' '}
+        {nextPage
+          ? firstPart.map((item) => {
+              return (
+                <div className='main-detail-cnt' key={item.id}>
+                  <Detail data={item} />
+                </div>
+              );
+            })
+          : secondPart.map((item) => {
+              return (
+                <div className='main-detail-cnt' key={item.id}>
+                  <SecondDetail data={item} />
+                </div>
+              );
+            })}
+      </div>
 
-      {nextPage
-        ? firstPart.map((item) => {
-            return (
-              <div className='main-detail-cnt' key={item.id}>
-                <Detail data={item} />
-              </div>
-            );
-          })
-        : secondPart.map((item) => {
-            return (
-              <div className='main-detail-cnt' key={item.id}>
-                <SecondDetail data={item} />
-              </div>
-            );
-          })}
       <div className='navigate-btn-cnt'>
         <button className='navigate-btn' onClick={navigateBack}>
           {' '}

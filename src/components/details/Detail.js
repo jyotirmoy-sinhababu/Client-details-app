@@ -12,7 +12,7 @@ const Detail = ({ data }) => {
   console.log(viewDetails);
 
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       <div className='detail-cnt'>
         {' '}
         <div className='detail-para-cnt'>
@@ -66,7 +66,7 @@ const Detail = ({ data }) => {
           </div>
         </div>
       ) : null}
-    </>
+    </div>
   );
 };
 

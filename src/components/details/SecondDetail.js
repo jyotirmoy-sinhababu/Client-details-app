@@ -10,7 +10,7 @@ const SecondDetail = ({ data }) => {
   };
 
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       <div className='detail-cnt'>
         {' '}
         <div className='detail-para-cnt'>
@@ -64,7 +64,7 @@ const SecondDetail = ({ data }) => {
           </div>
         </div>
       ) : null}
-    </>
+    </div>
   );
 };
 
