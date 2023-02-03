@@ -1,5 +1,7 @@
 .main-detail-cnt {
   display: flex;
+  border: 1px solid green;
+  width: 700px;
 }
 
 .navigate-btn-cnt {
@@ -14,4 +16,11 @@
   width: 50px;
   border: none;
   background-color: rgb(250, 252, 253);
+}
+
+.home-detailComp-cnt {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  align-items: center;
 }

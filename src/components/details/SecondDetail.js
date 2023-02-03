@@ -1,4 +1,5 @@
 import React from 'react';
+import './detail.css';
 
 import { useState } from 'react';
 
@@ -10,8 +11,8 @@ const SecondDetail = ({ data }) => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-      <div className='detail-cnt'>
+    <div className='detail-cnt'>
+      <div>
         {' '}
         <div className='detail-para-cnt'>
           <p className='detail-para-heading'>{data.username}</p>

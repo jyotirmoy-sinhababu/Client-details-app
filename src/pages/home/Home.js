@@ -39,13 +39,7 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '21px',
-        }}
-      >
+      <div className='home-detailComp-cnt'>
         {' '}
         {nextPage
           ? firstPart.map((item) => {
