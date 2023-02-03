@@ -12,7 +12,7 @@ const SecondDetail = ({ data }) => {
 
   return (
     <div className='detail-cnt'>
-      <div>
+      <div className='detail-first-cnt'>
         {' '}
         <div className='detail-para-cnt'>
           <p className='detail-para-heading'>{data.username}</p>

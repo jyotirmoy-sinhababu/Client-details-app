@@ -1,4 +1,21 @@
 .detail-cnt {
   display: flex;
   flex-direction: column;
+  padding-left: 5px;
+}
+
+.detail-first-cnt {
+  display: flex;
+  gap: 4rem;
+  padding-left: 5px;
+  height: 140px;
+  align-items: center;
+}
+
+.more-detail-cnt {
+  display: flex;
+  padding-left: 135px;
+  gap: 4.5rem;
+  padding-bottom: 15px;
+  border-radius: 15px;
 }

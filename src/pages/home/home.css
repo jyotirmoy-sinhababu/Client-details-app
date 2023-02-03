@@ -1,6 +1,7 @@
 .main-detail-cnt {
   display: flex;
   border: 1px solid green;
+  border-radius: 15px;
   width: 700px;
 }
 
@@ -21,6 +22,6 @@
 .home-detailComp-cnt {
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
   align-items: center;
+  gap: 1.8rem;
 }
