@@ -13,53 +13,55 @@ const Detail = ({ data }) => {
 
   return (
     <>
-      <div className=''>
+      <div className='detail-cnt'>
         {' '}
-        <div>
-          <p>{data.username}</p>
+        <div className='detail-para-cnt'>
+          <p className='detail-para-heading'>{data.username}</p>
         </div>
-        <div>
-          <p>CONTACT</p>
-          <p>{data.name}</p>
+        <div className='detail-para-cnt'>
+          <h4>CONTACT</h4>
+          <p className='detail-para-heading'>{data.name}</p>
         </div>
-        <div>
-          <p>CITY</p>
-          <p>{data.address.city}</p>
+        <div className='detail-para-cnt'>
+          <h4>CITY</h4>
+          <p className='detail-para-heading'>{data.address.city}</p>
         </div>
-        <div>
-          <p>STATE</p>
-          <p>{data.address.street}</p>
+        <div className='detail-para-cnt'>
+          <h4>STATE</h4>
+          <p className='detail-para-heading'>{data.address.street}</p>
         </div>
-        <div>
-          <button onClick={showDetails}>View Details</button>
+        <div className='view-dtl-cnt'>
+          <button className='view-dtl-btn' onClick={showDetails}>
+            View Details
+          </button>
         </div>
       </div>
       {viewDetails ? (
-        <div>
-          <div>
+        <div className='more-detail-cnt'>
+          <div className='more-detail-first'>
             <div>
-              <h4>Contact person</h4>
-              <p>{data.name}</p>
+              <h4 className='mr-hd'>Contact person</h4>
+              <p className='detail-para-heading'>{data.name}</p>
             </div>
             <div>
-              <h4>Emails</h4>
-              <p>{data.email}</p>
+              <h4 className='mr-hd'>Emails</h4>
+              <p className='detail-para-heading'>{data.email}</p>
             </div>
             <div>
-              <h4>Phone</h4>
-              <p>{data.phone}</p>
+              <h4 className='mr-hd'>Phone</h4>
+              <p className='detail-para-heading'>{data.phone}</p>
             </div>
           </div>
-          <div>
+          <div className='more-detail-second'>
             <div>
-              <h4>Address</h4>
-              <p>
+              <h4 className='mr-hd'>Address</h4>
+              <p className='detail-para-heading'>
                 {data.address.street}, {data.address.suite}
               </p>
             </div>
             <div>
-              <h4>City</h4>
-              <p>{data.address.city}</p>
+              <h4 className='mr-hd'>City</h4>
+              <p className='detail-para-heading'>{data.address.city}</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './home.css';
 
 import Nav from '../../components/nav/Nav';
 import Detail from '../../components/details/Detail';
@@ -42,27 +43,27 @@ const Home = () => {
       {nextPage
         ? firstPart.map((item) => {
             return (
-              <div key={item.id}>
+              <div className='main-detail-cnt' key={item.id}>
                 <Detail data={item} />
               </div>
             );
           })
         : secondPart.map((item) => {
             return (
-              <div key={item.id}>
+              <div className='main-detail-cnt' key={item.id}>
                 <SecondDetail data={item} />
               </div>
             );
           })}
-      <div>
-        <button onClick={navigateBack}>
+      <div className='navigate-btn-cnt'>
+        <button className='navigate-btn' onClick={navigateBack}>
           {' '}
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            width='16'
-            height='16'
+            width='36'
+            height='36'
             fill='currentColor'
-            class='bi bi-arrow-left-circle'
+            className='bi bi-arrow-left-circle'
             viewBox='0 0 16 16'
           >
             <path
@@ -71,13 +72,13 @@ const Home = () => {
             />
           </svg>
         </button>
-        <button onClick={navigate}>
+        <button className='navigate-btn' onClick={navigate}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            width='16'
-            height='16'
+            width='36'
+            height='36'
             fill='currentColor'
-            class='bi bi-arrow-right-circle'
+            className='bi bi-arrow-right-circle'
             viewBox='0 0 16 16'
           >
             <path
